@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Монохром | Минимализм</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #111;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            transition: all 0.3s ease;
+        }
+
+        header {
+            padding: 40px 0;
+            border-bottom: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            text-decoration: none;
+            color: #111;
+            letter-spacing: -1px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin-left: 40px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #000;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+            margin-bottom: 80px;
+            border-bottom: 1px solid #eee;
+        }
+        h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            letter-spacing: -2px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 80px;
+        }
+
+        .card {
+            border: 1px solid #eaeaea;
+            padding: 30px;
+            transition: all 0.3s;
+        }
+
+        .card:hover {
+            border-color: #000;
+        }
+
+        .card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .card p {
+            color: #444;
+            font-size: 0.95rem;
+        }
+
+        .featured {
+            margin-bottom: 80px;
+            padding: 40px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #000;
+        }
+
+        .featured h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .featured p {
+            max-width: 800px;
+            color: #333;
+        }
+
+        footer {
+            padding: 40px 0;
+            border-top: 1px solid #ddd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .theme-toggle {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #000;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            border: 1px solid #000;
+            transition: all 0.3s;
+            font-size: 1.2rem;
+        }
+
+        .theme-toggle:hover {
+            background-color: #fff;
+            color: #000;
+        }
+
+        .dark-mode {
+            background-color: #111;
+            color: #f1f1f1;
+        }
+
+        .dark-mode header {
+            border-bottom-color: #333;
+        }
+
+        .dark-mode .logo {
+            color: #f1f1f1;
+        }
+
+        .dark-mode nav a {
+            color: #ccc;
+        }
+
+        .dark-mode nav a:hover {
+            color: #fff;
+        }
+
+        .dark-mode .hero {
+            border-bottom-color: #333;
+        }
+
+        .dark-mode .subtitle {
+            color: #aaa;
+        }
+
+        .dark-mode .card {
+            border-color: #333;
+            background-color: #1a1a1a;
+        }
+
+        .dark-mode .card:hover {
+            border-color: #fff;
+        }
+
+        .dark-mode .card p {
+            color: #bbb;
+        }
+
+        .dark-mode .featured {
+            background-color: #1a1a1a;
+            border-left-color: #fff;
+        }
+
+        .dark-mode .featured p {
+            color: #ccc;
+        }
+
+        .dark-mode footer {
+            border-top-color: #333;
+            color: #888;
+        }
+
+        .dark-mode .theme-toggle {
+            background-color: #fff;
+            color: #000;
+            border-color: #fff;
+        }
+
+        .dark-mode .theme-toggle:hover {
+            background-color: #000;
+            color: #fff;
+            border-color: #fff;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 30px 0;
+            }
+
+            nav ul {
+                margin-top: 20px;
+            }
+
+            nav li {
+                margin-left: 0;
+                margin-right: 30px;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            footer {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            footer div {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="hero">
+            <h1>Черно-белая эстетика в рисунке</h1>
+            <p class="subtitle">Комиксы "Манга" на первый взгляд может показаться детским и не серьёзным, но жанр "сэйнен" - это манга для думающего читателя. Она не боится исследовать сложные философские вопросы о смысле жизни, морали и обществе, сочетая глубокие сюжеты с часто безупречной, детализированной графикой, где каждый кадр — произведение искусства. Я Будаков Дамдин и этот сайт является моим домшаним задания где я мог бы рассказать о своей любимой манге в жанре "Сэйнен"</p>
+        </section>
+
+<section class="content-grid">
+    <a href="history.html" class="card">
+        <h2>О жанре "Сэйнен"</h2>
+        <p>В этой графе я расскажу о появлении данного жанра и то как оно превратилось в то что мы имеем сейчас.</p>
+    </a>
+
+    <a href="trio.html" class="card">
+        <h2>Работы</h2>
+        <p>В этой графе расскажу о "Большой тройке сэйненов" которые давно уже стали культовыми произведениями как в Японии так и за рубежом. Каждая работа — это исследование формы, текстуры и контраста.</p>
+    </a>
+
+    <a href="Итоги.html" class="card">
+        <h2>Итоги</h2>
+        <p>Сэйнен — это не просто комиксы а само по себе возможное исскуство которое может быть на равне с книгами.</p>
+    </a>
+</section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классические произведения | Монохром</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #111;
+            background-color: #fff;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .back-link {
+            display: inline-block;
+            margin-bottom: 40px;
+            text-decoration: none;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .back-link:hover {
+            color: #000;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 30px;
+            letter-spacing: -1px;
+        }
+
+        .intro {
+            max-width: 900px;
+            margin: 0 auto 60px;
+            font-size: 1.1rem;
+            color: #333;
+            text-align: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 40px;
+        }
+
+        .manga-section {
+            margin: 80px 0;
+            padding: 40px 0;
+            border-top: 2px solid #000;
+        }
+
+        .manga-title {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .manga-subtitle {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .synopsis {
+            background-color: #f8f8f8;
+            padding: 25px;
+            margin: 30px 0;
+            border-left: 4px solid #555;
+        }
+
+        .synopsis h3 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: #222;
+        }
+
+        .synopsis p {
+            color: #444;
+            line-height: 1.7;
+        }
+
+        .content-section {
+            margin: 40px 0;
+        }
+
+        .section-title {
+            font-size: 1.6rem;
+            font-weight: 600;
+            margin: 40px 0 20px 0;
+            color: #222;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+        }
+
+        .art-section {
+            background-color: #fafafa;
+            padding: 30px;
+            margin: 40px 0;
+            border-radius: 4px;
+        }
+
+        .art-section h4 {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 40px 0;
+        }
+
+        .image-item {
+            border: 1px solid #eaeaea;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .image-caption {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+        }
+
+        .conclusion {
+            margin: 60px 0;
+            padding: 40px;
+            background-color: #000;
+            color: #fff;
+            border-radius: 4px;
+        }
+
+        .conclusion h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+
+        .conclusion p {
+            color: #ddd;
+        }
+
+        .code-example {
+            background-color: #f5f5f5;
+            padding: 20px;
+            margin: 40px 0;
+            border-left: 3px solid #000;
+            font-family: monospace;
+            white-space: pre-wrap;
+            overflow-x: auto;
+            font-size: 0.9rem;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        ul {
+            margin: 20px 0 20px 30px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            color: #444;
+        }
+
+        .emphasis {
+            font-weight: 600;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Назад к главной</a>
+
+    <h1>Классические произведения сэйнэн-манги</h1>
+
+    <div class="intro">
+        <p>Безусловно. Эти три манги — столпы жанра, где философский поиск и художественная форма сливаются в нечто, претендующее на звание высокого искусства.</p>
+    </div>
+    <div class="manga-section">
+        <h2 class="manga-title">1. «Бродяга» (Vagabond) Такехико Иноуэ</h2>
+        <p class="manga-subtitle">Эпическое переосмысление жизни легендарного мастера меча Миямото Мусаси</p>
+
+        <div class="synopsis">
+            <h3>Краткий сюжет</h3>
+            <p>Это эпическое, основанное на романе Эйдзи Ёсикавы, переосмысление жизни легендарного мастера меча Миямото Мусаси. Мы встречаем его юным бандитом по имени Такэдзо, одержимым лишь грубой силой и славой. История — это его многолетний путь бродяги, ищущего на дорогах феодальной Японии не просто противников для побед, но предельного понимания себя, своего ремесла и сути бытия через столкновения с другими великими мастерами, такими как Сасаки Кодзиро.</p>
+        </div>
+
+        <div class="content-section">
+            <h3 class="section-title">Философские темы</h3>
+            <p>Идея пути («до») как бесконечного самосовершенствования. Вопрос: что такое истинная сила? Это физическое превосходство или духовная целостность? Манга исследует эго, одержимость, одиночество гения и поиск гармонии с миром. Мусаси начинается как «дикий зверь» и через страдание и рефлексию стремится стать «художником» жизни, где меч — лишь кисть.</p>
+        </div>
+
+        <div class="art-section">
+            <h4>Арт как искусство</h4>
+            <p>Рисунок Иноуэ — это титанический труд, возведенный в абсолют. Он отказался от помощников, и каждая страница — это персональный шедевр.</p>
+
+            <ul>
+                <li><span class="emphasis">Живые полотна:</span> Пейзажи (поля, леса, горные тропы) написаны тушью с таким чувством света, воздуха и текстуры, что их хочется рассматривать в раме.</li>
+                <li><span class="emphasis">Анатомия как философия:</span> Тела персонажей не просто нарисованы — они вылеплены светотенью. Каждый мускул, шрам, морщина на лице несут историю боли, труда и возраста.</li>
+                <li><span class="emphasis">Пустота и форма:</span> Иноуэ мастерски использует пустые пространства и размытые фоны, концентрируя внимание на внутреннем мире героя, делая каждую главу медитативным путешествием.</li>
+            </ul>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="1-kopiya_Bzef.jpg" alt="Vagabond арт 1">
+                <div class="image-caption">Искусство Иноуэ: пейзажи</div>
+            </div>
+            <div class="image-item">
+                <img src="295-162_rgjki-vagabond-v18-c162-rampage-of-the-beast-vagabond-v18-134-135.jpg" alt="Vagabond арт 2">
+                <div class="image-caption">Детальная прорисовка персонажей</div>
+            </div>
+            <div class="image-item">
+                <img src="b4b0b359ef1db446ebca1d5948f9bfb7.jpg" alt="Vagabond арт 3">
+                <div class="image-caption">Использование пустого пространства</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="manga-section">
+        <h2 class="manga-title">2. «Берсерк» (Berserk) Кэнтаро Миуры</h2>
+        <p class="manga-subtitle">Мрачный эпос о борьбе человеческой воли против предопределенности</p>
+
+        <div class="synopsis">
+            <h3>Краткий сюжет</h3>
+            <p>В мрачном мире, напоминающем средневековую Европу, обреченный на вечное преследование демонами наемник-одиночка Гатс ведет бесконечную войну. Его путь — это месть бывшему другу и возлюбленному Гриффиту, который ради абсолютной власти принес в жертву своих соратников, став богоподобным существом. Сюжет строится на двух линиях: «золотой эпохи» прошлого, полной братства и рокового выбора, и мрачного настоящего, где Гатс скитается с проклятием, защищая немногих близких ему людей.</p>
+        </div>
+
+        <div class="content-section">
+            <h3 class="section-title">Философские темы</h3>
+            <p>Борьба человеческой воли против предопределенности, судьбы и богов. Манга исследует природу травмы, одержимости и способности оставаться человеком в абсолютно бесчеловечном мире. Это притча о цене мечты (Гриффит) и цене выживания (Гатс). Глубочайший вопрос: можно ли, пройдя через абсолютное зло и страдание, найти не просто цель для мести, но и смысл для жизни?</p>
+        </div>
+
+        <div class="art-section">
+            <h4>Арт как искусство</h4>
+            <p>Графика Миуры — это мрачный, готический шедевр индустрии, не имеющий аналогов по плотности и детализации.</p>
+
+            <ul>
+                <li><span class="emphasis">Архитектура ада:</span> Каждый фоновый элемент, от кладки замка до корней деревьев в заповедном лесу, прорисован с фотографической, почти болезненной точностью.</li>
+                <li><span class="emphasis">Демонический барокко:</span> Дизайн апостолов и существ Малого мира — это бесконечная фантазия ужаса, смешавшая в себе Иеронима Босха, Гойю и готическую скульптуру.</li>
+                <li><span class="emphasis">Движение в статике:</span> Миура виртуозно управляет скоростью повествования через композицию разворотов, превращая битвы в чудовищные, но прекрасные в своем исполнении симфонии насилия.</li>
+            </ul>
+        </div>
+        <div class="image-grid">
+            <div class="image-item">
+                <img src="1.jpg" alt="Berserk арт 1">
+                <div class="image-caption">Детализированные фоны</div>
+            </div>
+            <div class="image-item">
+                <img src="3.jpg" alt="Berserk арт 2">
+              <div class="image-caption">Дизайн существ и доспехов</div>
+            </div>
+            <div class="image-item">
+                <img src="2.jpg" alt="Berserk арт 3">
+                <div class="image-caption">Кинетика боевых сцен</div>
+            </div>
+        </div>
+    </div>
+    <div class="manga-section">
+        <h2 class="manga-title">3. «Сага о Винланде» (Vinland Saga) Макото Юкимура</h2>
+        <p class="manga-subtitle">Исторический эпос о пути от мести к созиданию</p>
+
+        <div class="synopsis">
+            <h3>Краткий сюжет</h3>
+            <p>Начавшись как суровый исторический эпос о викингах эпохи короля Кнуда Великого, манга следует за Торфинном, сыном легендарного воина. Охваченный жаждой мести убийце отца, хитроумному Аскеладду, юный Торфинн проводит годы в жестоких битвах как его орудие. Однако, пройдя через ад войны и рабства, он совершает радикальный поворот: отвергает насилие и отправляется в почти мифическое путешествие, чтобы найти «Винланд» — землю, свободную от рабства и войн, и построить ее своими руками.</p>
+        </div>
+
+        <div class="content-section">
+            <h3 class="section-title">Философские темы</h3>
+            <p>Это глубокое исследование насилия, его цикличности и возможности истинного ненасилия (пацифизма) в жестоком мире. Манга задает вопросы: Что делает человека «истинным воином»? Тот, кто сильнее всех убивает, или тот, кто умеет защищать, не убивая? Это путь от «у меня нет врагов» как детской наивности к тому же утверждению как результату титанической работы духа и высшего мужества.</p>
+        </div>
+
+        <div class="art-section">
+            <h4>Арт как искусство</h4>
+            <p>Стиль Юкимуры — это мост между жестоким реализмом и возвышенной красотой.</p>
+
+            <ul>
+                <li><span class="emphasis">Кинетический реализм:</span> Сцены сражений передают всю хаотичную, грязную и смертоносную физику средневекового боя.</li>
+                <li><span class="emphasis">Лиризм тишины:</span> Самые сильные моменты — не в битвах, а в кадрах тишины: лица людей, северные пейзажи, первый всход на новой земле.</li>
+                <li><span class="emphasis">Портрет души:</span> Юкимура гениально передает внутреннюю трансформацию героев через их лица. От дикой ярости в глазах юного Торфинна до глубокого, трагического спокойствия в его взрослом взгляде.</li>
+            </ul>
+        </div>
+
+        <div class="image-grid">
+            <div class="image-item">
+
+                <img src="24.jpg" alt="Vinland Saga арт 1">
+
+                <div class="image-caption">Реалистичные батальные сцены</div>
+            </div>
+            <div class="image-item">
+
+                <img src="peizah.jpg" alt="Vinland Saga арт 2">
+
+                <div class="image-caption">Северные пейзажи и атмосфера</div>
+            </div>
+            <div class="image-item">
+
+                <img src="34.jpg" alt="Vinland Saga арт 3">
+                <div class="image-caption">Эволюция персонажей</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="conclusion">
+        <h3>Итоговый взгляд</h3>
+        <p>Эти три автора используют холст манги для создания не серийных развлечений, а графических философских трактатов. Иноуэ лепит душу через тело и природу, Миура строит соборы ада для вопросов о воле и судьбе, а Юкимура на контрасте ужаса войны и красоты мира ищет рецепт человечности. Их арт — не стиль ради стиля, а обязательная, единственно возможная форма для их глубокого, сложного и бесконечно художественного высказывания. Это и есть высшая точка, которой может достичь манга жанра сэйнэн.</p>
+    </div>
+
+    </div>
+</body>
+</html>
